@@ -6,6 +6,7 @@
   "jsnext:main": "dist/rollup-plugin-stub.es6.js",
   "scripts": {
     "build": "./script/build",
+    "postinstall": "npm run build",
     "pretest": "npm run build",
     "prepublish": "npm run build",
     "test": "mocha"
@@ -19,7 +20,9 @@
   "author": "Brian Donovan",
   "license": "MIT",
   "files": [
-    "dist/"
+    "dist/",
+    "script/",
+    "index.js"
   ],
   "devDependencies": {
     "babel-plugin-transform-es2015-parameters": "^6.6.0",
